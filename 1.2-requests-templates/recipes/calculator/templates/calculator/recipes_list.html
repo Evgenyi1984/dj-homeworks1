@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes List</title>
+</head>
+<body>
+    <h1>Список рецептов</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>
+                {{ recipe }}:
+                <a href="/{{ recipe }}/">одна порция</a>, 
+                <a href="/{{ recipe }}/?servings=2">две порции</a>, 
+                <a href="/{{ recipe }}/?servings=5">пять порций</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
