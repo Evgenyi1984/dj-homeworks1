@@ -3,10 +3,22 @@
 
 {% block title %}Список учеников{% endblock %}
 {% block content %}
-<div class="row">
+<p>
+  Сортировать по:
+  <a href="?ordering=group"{% if ordering == 'group' %} class="active"{% endif %}>Группе</a> |
+  <a href="?ordering=-group"{% if ordering == '-group' %} class="active"{% endif %}>Группе (обратный порядок)</a> |
+  <a href="?ordering=name"{% if ordering == 'name' %} class="active"{% endif %}>Имени</a> |
+  <a href="?ordering=-name"{% if ordering == '-name' %} class="active"{% endif %}>Имени (обратный порядок)</a>
+</p><div class="row">
   <ul>
-  {% for student in object_list %}
-    <li>{{ student.name }} {{ student.group }} <br> Преподаватель: {{ student.teacher.name }} {{ student.teacher.subject }}</li>
+  {% for student in students %}
+  <li>
+    {{ student.name }} {{ student.group }} 
+    <br> Преподаватели: <br>
+    {% for teacher in student.teachers.all %}
+      {{ teacher.name }}: {{ teacher.subject }}<br>
+    {% endfor %}
+  </li>
   {% endfor %}
   </ul>
 </div>

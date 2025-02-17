@@ -1,0 +1,137 @@
+[
+    {
+        "model": "articles.tag",
+        "pk": 1,
+        "fields": {
+            "name": "Культура"
+        }
+    },
+    {
+        "model": "articles.tag",
+        "pk": 2,
+        "fields": {
+            "name": "Город"
+        }
+    },
+    {
+        "model": "articles.tag",
+        "pk": 3,
+        "fields": {
+            "name": "Здоровье"
+        }
+    },
+    {
+        "model": "articles.tag",
+        "pk": 4,
+        "fields": {
+            "name": "Наука"
+        }
+    },
+    {
+        "model": "articles.tag",
+        "pk": 5,
+        "fields": {
+            "name": "Космос"
+        }
+    },
+    {
+        "model": "articles.tag",
+        "pk": 6,
+        "fields": {
+            "name": "Международные отношения"
+        }
+    },
+    {
+        "model": "articles.article",
+        "pk": 1,
+        "fields": {
+            "title": "В \"Детском мире\" на Любянке открыли музей",
+            "text": "\"В Москве нет музея, связанного с темой детства, игрушек, детскими играми, и это отрицательно скажется на образе столицы\", - считает заведующий музейно-выставочным отделом департамента культуры Москвы Антон Горянов.",
+            "published_at": "2018-09-30T19:26:52Z",
+            "image": "th_946876594_EntghVT.jpg"
+        }
+    },
+    {
+        "model": "articles.scope",
+        "pk": 1,
+        "fields": {
+            "article": 1,
+            "tag": 1,
+            "is_main": true
+        }
+    },
+    {
+        "model": "articles.scope",
+        "pk": 2,
+        "fields": {
+            "article": 1,
+            "tag": 2,
+            "is_main": false
+        }
+    },
+    {
+        "model": "articles.article",
+        "pk": 2,
+        "fields": {
+            "title": "Ученые доказали вред периодического курения",
+            "text": "Кливлендские ученые опубликовали результаты исследования 78 пар близнецов, в каждой из которых один из двойни курил, а второй нет.",
+            "published_at": "2018-08-30T20:04:44Z",
+            "image": "th_1488217075_CVC0Ltk.jpg"
+        }
+    },
+    {
+        "model": "articles.scope",
+        "pk": 3,
+        "fields": {
+            "article": 2,
+            "tag": 3,
+            "is_main": true
+        }
+    },
+    {
+        "model": "articles.scope",
+        "pk": 4,
+        "fields": {
+            "article": 2,
+            "tag": 4,
+            "is_main": false
+        }
+    },
+    {
+        "model": "articles.article",
+        "pk": 3,
+        "fields": {
+            "title": "Директор ИКИ РАН прокомментировал инициативы по созданию базы на Луне",
+            "text": "Лунная база должна быть международным проектом — ни одна из космических держав сегодня не может осваивать Спутник Земли без помощи партнёров, заявил директор Института космических исследований РАН, член-корреспондент РАН Анатолий Петрукович.",
+            "published_at": "2018-07-30T20:08:20Z",
+            "image": "th_1521804489_cfyJCMV.jpg"
+        }
+    },
+    {
+        "model": "articles.scope",
+        "pk": 5,
+        "fields": {
+            "article": 3,
+            "tag": 5,
+            "is_main": true
+        }
+    },
+    {
+        "model": "articles.scope",
+        "pk": 6,
+        "fields": {
+            "article": 3,
+            "tag": 4,
+            "is_main": false
+        }
+    },
+    {
+        "model": "articles.scope",
+        "pk": 7,
+        "fields": {
+            "article": 3,
+            "tag": 6,
+            "is_main": false
+        }
+    }
+]
