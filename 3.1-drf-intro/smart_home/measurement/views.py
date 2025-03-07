@@ -12,7 +12,7 @@ class SensorListCreateView(generics.ListCreateAPIView):
 class SensorRetrieveUpdateView(generics.RetrieveUpdateAPIView):
     queryset = Sensor.objects.all()
     serializer_class = SensorDetailSerializer
-    #http_method_names = ['get', 'patch']
+    http_method_names = ['get', 'patch']
 
 # Add Measurement
 class MeasurementCreateView(generics.CreateAPIView):
